@@ -1,1 +1,44 @@
-/*# sourceMappingURL=index.css.map */
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  position: fixed;
+  display: block;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  z-index: 9999;
+}
+.nav-container .navbar {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: black;
+  width: 100%;
+}
+.nav-container .navbar .navbar-menu-container {
+  display: grid;
+  grid-template-areas: "logo access cart menu";
+  grid-template-columns: 1fr 50px 50px 50px;
+  width: 100vw;
+  align-items: center;
+  padding: 0 15px;
+}
+@media screen and (min-width: 960px) {
+  .nav-container .navbar .navbar-menu-container {
+    display: grid;
+    grid-template-areas: "logo menu cart access";
+    grid-template-columns: 140px 1fr 50px auto;
+    height: 70px;
+    align-items: center;
+    width: 100vw;
+    padding: 0 15px;
+  }
+}/*# sourceMappingURL=index.css.map */
