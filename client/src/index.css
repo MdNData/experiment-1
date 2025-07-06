@@ -41,4 +41,26 @@
     width: 100vw;
     padding: 0 15px;
   }
+}
+.nav-container .navbar .logo a {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  max-width: 140px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container .navbar .logo a img {
+  height: 38px;
+}
+.nav-container .navbar .logo a span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #111827;
+  margin-top: 1px;
+  line-height: 0.8;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=index.css.map */

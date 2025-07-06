@@ -23,6 +23,7 @@ if (process.env.ENV === "development") {
   app.use(morgan("dev"));
 }
 
+//serve the client files
 app.use(express.static(path.resolve(__dirname, "./client/dist")));
 
 //utils
