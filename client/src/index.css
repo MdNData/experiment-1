@@ -3,6 +3,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #fbfbff;
+}
+
+body {
+  background-color: #000624;
 }
 
 .nav-container {
@@ -10,8 +15,7 @@
   display: block;
   height: 70px;
   width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
   z-index: 9999;
 }
 .nav-container .navbar {
@@ -19,8 +23,6 @@
   height: 70px;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffffff;
-  color: black;
   width: 100%;
 }
 .nav-container .navbar .navbar-menu-container {
@@ -30,6 +32,7 @@
   width: 100vw;
   align-items: center;
   padding: 0 15px;
+  background-color: #000624;
 }
 @media screen and (min-width: 960px) {
   .nav-container .navbar .navbar-menu-container {
@@ -53,14 +56,49 @@
   justify-content: center;
   align-items: center;
 }
-.nav-container .navbar .logo a img {
-  height: 38px;
-}
 .nav-container .navbar .logo a span {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #111827;
+  font-size: 20px;
+  font-weight: 500;
   margin-top: 1px;
-  line-height: 0.8;
   letter-spacing: 1px;
+  font-family: "Bitcount Grid Double", sans-serif;
+}
+.nav-container .navbar .logo a span:hover {
+  color: rgb(68, 255, 68);
+}
+
+.cart-button {
+  grid-area: cart;
+  text-align: center;
+  position: relative;
+}
+.cart-button a {
+  display: block;
+  font-size: 25px;
+  padding-top: 5px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.cart-button a:hover .cart-item-count {
+  color: rgb(68, 255, 68);
+}
+.cart-button a:hover svg path {
+  color: rgb(68, 255, 68);
+}
+.cart-button a .cart-item-count {
+  position: absolute;
+  right: 5px;
+  bottom: -7px;
+  background-color: #000624;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3px;
+  min-width: 20px;
+  min-height: 20px;
+  font-family: "Bitcount Grid Double", sans-serif;
 }/*# sourceMappingURL=index.css.map */

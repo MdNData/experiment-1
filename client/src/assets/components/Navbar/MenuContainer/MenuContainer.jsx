@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Logo from "../../Logo/Logo";
+import CartButton from "../../Buttons/CartButton/CartButton";
 
 const MenuContainer = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="navbar-menu-container">
       <Logo isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <p>cartbutton</p>
+      <CartButton />
       <p>accessbutton</p>
       <p>menu</p>
     </div>
