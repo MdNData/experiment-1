@@ -31,6 +31,7 @@ body {
   grid-template-columns: 1fr 50px 50px 50px;
   width: 100vw;
   align-items: center;
+  justify-self: center;
   padding: 0 15px;
   background-color: #000624;
 }
@@ -61,9 +62,11 @@ body {
   font-weight: 500;
   margin-top: 1px;
   letter-spacing: 1px;
+  transition: all 0.2s linear;
   font-family: "Bitcount Grid Double", sans-serif;
 }
 .nav-container .navbar .logo a span:hover {
+  transition: all 0.2s linear;
   color: rgb(68, 255, 68);
 }
 
@@ -78,12 +81,18 @@ body {
   padding-top: 8px;
   font-weight: 400;
   text-decoration: none;
+  margin-top: -3px;
+}
+.cart-button a svg path {
+  transition: all 0.2s linear;
 }
 .cart-button a:hover .cart-item-count {
   color: rgb(68, 255, 68);
+  transition: all 0.2s linear;
 }
 .cart-button a:hover svg path {
   color: rgb(68, 255, 68);
+  transition: all 0.2s linear;
 }
 .cart-button a .cart-item-count {
   position: absolute;
@@ -100,6 +109,7 @@ body {
   padding: 3px;
   min-width: 20px;
   min-height: 20px;
+  transition: all 0.2s linear;
   font-family: "Bitcount Grid Double", sans-serif;
 }
 
@@ -120,6 +130,12 @@ body {
   border-radius: 50px;
   border: 1px solid rgb(68, 255, 68);
   justify-content: center;
+  margin-top: -3px;
+}
+.account-button a span,
+.account-button a path,
+.account-button a circle {
+  transition: all 0.2s linear;
 }
 .account-button a:hover {
   background-color: #000624;
@@ -148,4 +164,13 @@ body {
   .account-button a circle {
     color: #fbfbff;
   }
+}
+
+.nav-menu-btn {
+  display: block;
+  margin: 0 12.5px;
+  grid-area: menu;
+}
+.nav-menu-btn:hover span {
+  background-color: rgb(68, 255, 68) !important;
 }/*# sourceMappingURL=index.css.map */

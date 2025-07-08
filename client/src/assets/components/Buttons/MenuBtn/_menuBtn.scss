@@ -1,0 +1,11 @@
+.nav-menu-btn {
+  display: block;
+  margin: 0 12.5px;
+  grid-area: menu;
+
+  &:hover {
+    span {
+      background-color: $main-text-color-hover !important;
+    }
+  }
+}

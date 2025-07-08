@@ -15,9 +15,11 @@
       font-weight: 500;
       margin-top: 1px;
       letter-spacing: 1px;
+      transition: all 0.2s linear;
       font-family: $logo-font-family;
 
       &:hover {
+        transition: all 0.2s linear;
         color: $main-text-color-hover;
       }
     }

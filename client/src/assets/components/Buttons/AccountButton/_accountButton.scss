@@ -15,6 +15,13 @@
     border-radius: 50px;
     border: 1px solid $main-text-color-hover;
     justify-content: center;
+    margin-top: -3px;
+
+    span,
+    path,
+    circle {
+      transition: all 0.2s linear;
+    }
 
     &:hover {
       background-color: $main-dark-bg;
