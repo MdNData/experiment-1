@@ -2,6 +2,7 @@ $main-dark-bg: #000624;
 $main-text-color: #fbfbff;
 $main-text-color-hover: rgb(68, 255, 68);
 $logo-font-family: "Bitcount Grid Double", sans-serif;
+$title-font-family: "Huninn", sans-serif;
 
 * {
   border: 0;
@@ -18,3 +19,4 @@ body {
 @import "./assets/components/HomeLayout/homeLayout";
 @import "./assets/components/Navbar/navbar";
 @import "./assets/components/Buttons/CartButton/cartButton";
+@import "./assets/components/Buttons/AccountButton/accountButton";

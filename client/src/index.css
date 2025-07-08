@@ -74,8 +74,8 @@ body {
 }
 .cart-button a {
   display: block;
-  font-size: 25px;
-  padding-top: 5px;
+  font-size: 26px;
+  padding-top: 8px;
   font-weight: 400;
   text-decoration: none;
 }
@@ -101,4 +101,51 @@ body {
   min-width: 20px;
   min-height: 20px;
   font-family: "Bitcount Grid Double", sans-serif;
+}
+
+.account-button {
+  grid-area: access;
+  text-align: center;
+}
+.account-button a {
+  display: flex;
+  text-decoration: none;
+  background-color: rgb(68, 255, 68);
+  color: #000624;
+  font-size: 25px;
+  margin: auto;
+  font-weight: 400;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 50px;
+  border: 1px solid rgb(68, 255, 68);
+  justify-content: center;
+}
+.account-button a:hover {
+  background-color: #000624;
+}
+.account-button a:hover span,
+.account-button a:hover path,
+.account-button a:hover circle {
+  color: rgb(68, 255, 68);
+}
+.account-button a span {
+  font-size: 17px;
+  margin-left: 5px;
+  font-family: "Huninn", sans-serif;
+  color: #000624;
+}
+.account-button a path,
+.account-button a circle {
+  color: #000624;
+}
+@media screen and (max-width: 959px) {
+  .account-button a {
+    background-color: #000624;
+    border: 0;
+  }
+  .account-button a path,
+  .account-button a circle {
+    color: #fbfbff;
+  }
 }/*# sourceMappingURL=index.css.map */

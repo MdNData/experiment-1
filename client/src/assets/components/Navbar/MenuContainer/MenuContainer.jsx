@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../../Logo/Logo";
 import CartButton from "../../Buttons/CartButton/CartButton";
+import AccountButton from "../../Buttons/AccountButton/AccountButton";
 
 const MenuContainer = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ const MenuContainer = () => {
     <div className="navbar-menu-container">
       <Logo isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <CartButton />
-      <p>accessbutton</p>
+      <AccountButton />
       <p>menu</p>
     </div>
   );

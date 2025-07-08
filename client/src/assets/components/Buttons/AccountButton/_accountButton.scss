@@ -1,0 +1,53 @@
+.account-button {
+  grid-area: access;
+  text-align: center;
+
+  a {
+    display: flex;
+    text-decoration: none;
+    background-color: $main-text-color-hover;
+    color: $main-dark-bg;
+    font-size: 25px;
+    margin: auto;
+    font-weight: 400;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 50px;
+    border: 1px solid $main-text-color-hover;
+    justify-content: center;
+
+    &:hover {
+      background-color: $main-dark-bg;
+
+      span,
+      path,
+      circle {
+        color: $main-text-color-hover;
+      }
+    }
+
+    span {
+      font-size: 17px;
+      margin-left: 5px;
+      font-family: $title-font-family;
+      color: $main-dark-bg;
+    }
+
+    path,
+    circle {
+      color: $main-dark-bg;
+    }
+  }
+
+  @media screen and (max-width: 959px) {
+    a {
+      background-color: $main-dark-bg;
+      border: 0;
+
+      path,
+      circle {
+        color: $main-text-color;
+      }
+    }
+  }
+}
