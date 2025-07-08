@@ -7,7 +7,7 @@ const MenuBtn = ({
   barBorderRadius = 99,
   barMargins = "6px 0 6px 0px",
   barTransition = "200ms all linear",
-  isMenuOpen = () => {},
+  isMenuOpen = false,
   setIsMenuOpen = () => {},
 }) => {
   const defaultBarStyle = {

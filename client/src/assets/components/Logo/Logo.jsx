@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Logo = ({ isMenuOpen = "", setIsMenuOpen = () => {} }) => {
+const Logo = ({ isMenuOpen = false, setIsMenuOpen = () => {} }) => {
   return (
     <div className="logo" title="Codexency Logo">
       <NavLink to="/" onClick={() => setIsMenuOpen(false)}>

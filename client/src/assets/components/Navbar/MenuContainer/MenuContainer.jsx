@@ -4,6 +4,7 @@ import CartButton from "../../Buttons/CartButton/CartButton";
 import AccountButton from "../../Buttons/AccountButton/AccountButton";
 import MenuBtn from "../../Buttons/MenuBtn/MenuBtn";
 import { useAppContext } from "../../../../context";
+import Menu from "../Menu/Menu";
 
 const MenuContainer = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,7 @@ const MenuContainer = () => {
       {width < 960 ? (
         <MenuBtn isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       ) : null}
+      <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
     </div>
   );
 };
